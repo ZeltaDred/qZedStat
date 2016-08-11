@@ -240,51 +240,68 @@ void MimeCategorizer::writeSettings()
 
 
 void MimeCategorizer::addDefaultCategories()
-{
-    MimeCategory * junk = new MimeCategory( tr( "Junk" ), Qt::red );
-    CHECK_NEW( junk );
-    add( junk );
+{   
+    MimeCategory * ada = new MimeCategory( tr( "Ada" ), Qt::red );
+    CHECK_NEW( ada );
+    add( ada );
 
-    junk->addSuffix( "~"   );
-    junk->addSuffix( "bak" );
-    junk->addPattern( "core", Qt::CaseSensitive );
+    ada->addSuffixes( QStringList()
+               << "ada"
+               << "a"
+               << "adb"
+               << "ads"
+               );
 
 
-    MimeCategory * archives = new MimeCategory( tr( "Compressed Archives" ), Qt::green );
-    CHECK_NEW( archives );
-    add( archives );
+    MimeCategory * asp = new MimeCategory( tr( "ASP, ASP.NET" ), Qt::green );
+    CHECK_NEW( asp );
+    add( asp );
 
-    archives->addSuffixes( QStringList()
-			   << "7z"
-			   << "arj"
-			   << "cab"
-			   << "cpio.gz"
-			   << "deb"
-			   << "jar"
-			   << "rar"
-			   << "rpm"
-			   << "tar.bz2"
-			   << "tar.gz"
-			   << "tgz"
-			   << "zip"
+    asp->addSuffixes( QStringList()
+               << "asp"
+               << "aspx"
 			   );
 
 
-    MimeCategory * uncompressedArchives = new MimeCategory( tr( "Uncompressed Archives" ), QColor( 128, 128, 0 ) );
-    CHECK_NEW( uncompressedArchives );
-    add( uncompressedArchives );
+    MimeCategory * bash = new MimeCategory( tr( "Bash" ), Qt::green );
+    CHECK_NEW( bash );
+    add( bash );
 
-    uncompressedArchives->addSuffix( "tar"  );
-    uncompressedArchives->addSuffix( "cpio" );
+    bash->addSuffixes( QStringList()
+               << "sh"
+               << "ksh"
+               );
 
 
-    MimeCategory * compressed = new MimeCategory( tr( "Compressed Files" ), Qt::green );
-    CHECK_NEW( compressed );
-    add( compressed );
+    MimeCategory * csh = new MimeCategory( tr( "C Shell" ), Qt::green );
+    CHECK_NEW( csh );
+    add( csh );
 
-    compressed->addSuffix( ".bz2" );
-    compressed->addSuffix( ".gz" );
+    csh->addSuffixes( QStringList()
+               << "csh"
+               << "tcsh"
+               );
 
+    MimeCategory * cshrp = new MimeCategory( tr( "C#" ), Qt::green );
+    CHECK_NEW( cshrp );
+    add( cshrp );
+
+    cshrp->addSuffixes( QStringList()
+               << "cs"
+               );
+
+    MimeCategory * cee = new MimeCategory( tr( "C/C++" ), Qt::green );
+    CHECK_NEW(cee );
+    add( cee );
+
+    cee->addSuffixes( QStringList()
+               << "cpp"
+               << "c"
+               << "h"
+               << "hpp"
+               << "cc"
+               << "hh"
+               );
 
     MimeCategory * images = new MimeCategory( tr( "Images" ), Qt::cyan );
     CHECK_NEW( images );

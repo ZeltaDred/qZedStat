@@ -717,7 +717,7 @@ void MainWindow::openConfigDialog()
 
     _configDialog = new ConfigDialog( this );
     CHECK_PTR( _configDialog );
-    _configDialog->cleanupConfigPage()->setCleanupCollection( _cleanupCollection );
+    // _configDialog->cleanupConfigPage()->setCleanupCollection( _cleanupCollection );
     _configDialog->mimeCategoryConfigPage()->setMimeCategorizer( _mimeCategorizer );
 
     if ( ! _configDialog->isVisible() )

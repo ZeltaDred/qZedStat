@@ -86,7 +86,7 @@ ConfigDialog::ConfigDialog( QWidget * parent ):
 ConfigDialog::~ConfigDialog()
 {
     // logDebug() << "ConfigDialog destructor" << endl;
-    delete _cleanupConfigPage;
+  //  delete _cleanupConfigPage;
     delete _mimeCategoryConfigPage;
     delete _excludeRulesConfigPage;
 }

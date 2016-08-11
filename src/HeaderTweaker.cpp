@@ -18,7 +18,7 @@
 #include "SignalBlocker.h"
 
 
-using namespace QDirStat;
+using namespace QZedStat;
 
 
 HeaderTweaker::HeaderTweaker( QHeaderView * header, DirTreeView * parent ):

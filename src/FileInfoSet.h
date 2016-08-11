@@ -1,6 +1,6 @@
 /*
  *   File name: FileInfoSet.h
- *   Summary:	Support classes for QDirStat
+ *   Summary:	Support classes for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -14,7 +14,7 @@
 #include "FileInfo.h"
 
 
-namespace QDirStat
+namespace QZedStat
 {
     /**
      * Container for FileInfo pointers. This is a wrapper around QSet with a
@@ -85,7 +85,7 @@ namespace QDirStat
 
     };	// class FileInfoSet
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 
 #endif	// FileInfoSet_h

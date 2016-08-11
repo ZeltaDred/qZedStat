@@ -1,6 +1,6 @@
 /*
  *   File name: DirReadJob.h
- *   Summary:	Support classes for QDirStat
+ *   Summary:	Support classes for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -17,7 +17,7 @@
 #include "Logger.h"
 
 
-namespace QDirStat
+namespace QZedStat
 {
     // Forward declarations
     class FileInfo;
@@ -392,7 +392,7 @@ namespace QDirStat
     };
 
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 
 #endif // ifndef DirReadJob_h

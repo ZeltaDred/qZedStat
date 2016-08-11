@@ -1,6 +1,6 @@
 /*
  *   File name: Settings.cpp
- *   Summary:	Specialized settings classes for QDirStat
+ *   Summary:	Specialized settings classes for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -15,7 +15,7 @@
 #include "Exception.h"
 
 
-using namespace QDirStat;
+using namespace QZedStat;
 
 
 Settings::Settings( const QString & name ):

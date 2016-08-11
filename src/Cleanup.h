@@ -1,6 +1,6 @@
 /*
  *   File name: Cleanup.h
- *   Summary:	QDirStat classes to reclaim disk space
+ *   Summary:	QZedStat classes to reclaim disk space
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -18,7 +18,7 @@
 class OutputWindow;
 
 
-namespace QDirStat
+namespace QZedStat
 {
     class FileInfo;
 
@@ -109,7 +109,7 @@ namespace QDirStat
 	bool worksForFile() const { return _worksForFile; }
 
 	/**
-	 * Return whether or not this cleanup action works for QDirStat's
+	 * Return whether or not this cleanup action works for QZedStat's
 	 * special '<Files>' items, i.e. the pseudo nodes created in most
 	 * directories that hold the plain files.
 	 **/
@@ -444,7 +444,7 @@ namespace QDirStat
 
 	return stream;
     }
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 
 #endif // ifndef Cleanup_h

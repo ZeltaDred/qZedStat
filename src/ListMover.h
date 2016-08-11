@@ -1,7 +1,7 @@
 #ifndef ListMover_h
 #define ListMover_h
 
-namespace QDirStat
+namespace QZedStat
 {
     /**
      * Template class to move items in a QList<Value_t> up, down, to the top,
@@ -68,6 +68,6 @@ namespace QDirStat
 
     typedef ListMover<void *> PtrListMover;
         
-}       // namespace QDirStat
+}       // namespace QZedStat
 
 #endif	// ListMover_h

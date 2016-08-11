@@ -16,7 +16,7 @@
 #include <QTextStream>
 
 
-namespace QDirStat
+namespace QZedStat
 {
     /**
      * Data columns for data model, view and sorting.
@@ -96,10 +96,10 @@ namespace QDirStat
 	 * Example:
 	 *
 	 *   DataColumnList col;
-	 *   col << QDirStat::NameCol,
-	 *	 << QDirStat::PercentBarCol,
-	 *	 << QDirStat::PercentNumCol,
-	 *	 << QDirStat::TotalSizeCol;
+	 *   col << QZedStat::NameCol,
+	 *	 << QZedStat::PercentBarCol,
+	 *	 << QZedStat::PercentNumCol,
+	 *	 << QZedStat::TotalSizeCol;
 	 *   DataColumns->instance()->setColumns( col );
 	 *
 	 * NOTICE: If a data view is active, use DirTreeModel::setColumns()
@@ -199,6 +199,6 @@ namespace QDirStat
     }
 
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 #endif	// DataColumns_h

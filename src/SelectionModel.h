@@ -15,7 +15,7 @@
 #include "FileInfoSet.h"
 
 
-namespace QDirStat
+namespace QZedStat
 {
     class FileInfo;
     class DirTreeModel;
@@ -23,8 +23,8 @@ namespace QDirStat
     /**
      * Selection model that can translate between QModelIndex and FileInfo
      * pointers for use with a QModelIndex based Qt item view (e.g., a
-     * TreeView) and any QDirStat::DirTree based view (e.g., the
-     * QDirStat::TreeMapView).
+     * TreeView) and any QZedStat::DirTree based view (e.g., the
+     * QZedStat::TreeMapView).
      *
      * This is only a thin wrapper around QItemSelectionModel. The
      * QItemSelectionModel base class is the master with its QModelIndex based
@@ -277,6 +277,6 @@ namespace QDirStat
     };	// class SelectionModelProxy
 
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 #endif	// SelectionModel_h

@@ -1,6 +1,6 @@
 /*
  *   File name: MimeCategoryConfigPage.h
- *   Summary:	QDirStat configuration dialog classes
+ *   Summary:	QZedStat configuration dialog classes
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -15,7 +15,7 @@
 #include "MimeCategorizer.h"
 
 
-namespace QDirStat
+namespace QZedStat
 {
     /**
      * Configuration page (tab) for MimeCategories:
@@ -157,6 +157,6 @@ namespace QDirStat
 
     };	// class MimeCategoryConfigPage
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 #endif	// MimeCategoryConfigPage_h

@@ -1,6 +1,6 @@
 /*
  *   File name: TreemapTile.h
- *   Summary:	Treemap rendering for QDirStat
+ *   Summary:	Treemap rendering for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -20,7 +20,7 @@
 class QGraphicsSceneMouseEvent;
 
 
-namespace QDirStat
+namespace QZedStat
 {
     class FileInfo;
     class TreemapView;
@@ -376,7 +376,7 @@ namespace QDirStat
 	return stream;
     }
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 
 

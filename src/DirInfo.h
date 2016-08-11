@@ -1,6 +1,6 @@
 /*
  *   File name: DirInfo.h
- *   Summary:	Support classes for QDirStat
+ *   Summary:	Support classes for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -16,7 +16,7 @@
 #include "DataColumns.h"
 
 
-namespace QDirStat
+namespace QZedStat
 {
     // Forward declarations
     class DirTree;
@@ -433,7 +433,7 @@ namespace QDirStat
 
     };	// class DirInfo
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 
 #endif // ifndef DirInfo_h

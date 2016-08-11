@@ -1,6 +1,6 @@
 /*
  *   File name: TreemapView.h
- *   Summary:	View widget for treemap rendering for QDirStat
+ *   Summary:	View widget for treemap rendering for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -34,7 +34,7 @@ class QMouseEvent;
 class QSettings;
 
 
-namespace QDirStat
+namespace QZedStat
 {
     class TreemapTile;
     class HighlightRect;
@@ -244,7 +244,7 @@ namespace QDirStat
 	 * normal user with.
 	 *
 	 * Experts can edit them in the settings file, typically in
-	 * ~/.config/QDirStat/QDirStat.conf ; this class writes the settings to
+	 * ~/.config/QZedStat/QZedStat.conf ; this class writes the settings to
 	 * that file in its destructor so those experts can find and edit them.
 	 *
 	 * If you misconfigured things and want to go back to the defaults,
@@ -570,7 +570,7 @@ namespace QDirStat
 	    {}
     };
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 
 #endif // ifndef TreemapView_h

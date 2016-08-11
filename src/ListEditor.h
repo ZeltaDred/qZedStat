@@ -1,6 +1,6 @@
 /*
  *   File name: ListEditor.h
- *   Summary:	QDirStat configuration dialog classes
+ *   Summary:	QZedStat configuration dialog classes
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -16,7 +16,7 @@
 class QAbstractButton;
 
 
-namespace QDirStat
+namespace QZedStat
 {
     /**
      * This is an abstract widget base class for config pages that have a list
@@ -294,6 +294,6 @@ namespace QDirStat
 	void * _value;
     };
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 #endif	// ListEditor_h

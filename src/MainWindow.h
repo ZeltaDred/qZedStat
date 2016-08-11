@@ -1,6 +1,6 @@
 /*
  *   File name: MainWindow.h
- *   Summary:	QDirStat main window
+ *   Summary:	QZedStat main window
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -21,7 +21,7 @@ class QSortFilterProxyModel;
 class QSignalMapper;
 
 
-namespace QDirStat
+namespace QZedStat
 {
     class CleanupCollection;
     class ConfigDialog;
@@ -31,7 +31,7 @@ namespace QDirStat
     class SelectionModel;
 }
 
-using QDirStat::FileInfo;
+using QZedStat::FileInfo;
 
 
 
@@ -263,11 +263,11 @@ protected:
 private:
 
     Ui::MainWindow		* _ui;
-    QDirStat::DirTreeModel	* _dirTreeModel;
-    QDirStat::SelectionModel	* _selectionModel;
-    QDirStat::CleanupCollection * _cleanupCollection;
-    QDirStat::MimeCategorizer	* _mimeCategorizer;
-    QDirStat::ConfigDialog	* _configDialog;
+    QZedStat::DirTreeModel	* _dirTreeModel;
+    QZedStat::SelectionModel	* _selectionModel;
+    QZedStat::CleanupCollection * _cleanupCollection;
+    QZedStat::MimeCategorizer	* _mimeCategorizer;
+    QZedStat::ConfigDialog	* _configDialog;
     QElapsedTimer		  _stopWatch;
     bool			  _modified;
     bool			  _verboseSelection;

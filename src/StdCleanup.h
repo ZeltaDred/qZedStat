@@ -1,6 +1,6 @@
 /*
  *   File name: StdCleanup.h
- *   Summary:	QDirStat classes to reclaim disk space
+ *   Summary:	QZedStat classes to reclaim disk space
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -16,7 +16,7 @@
 #define USE_DEBUG_ACTIONS 0
 
 
-namespace QDirStat
+namespace QZedStat
 {
     class Cleanup;
 
@@ -62,7 +62,7 @@ namespace QDirStat
 	~StdCleanup()	{}
     };
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 
 #endif // ifndef StdCleanup_h

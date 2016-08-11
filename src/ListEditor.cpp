@@ -1,6 +1,6 @@
 /*
  *   File name: ListEditor.h
- *   Summary:	QDirStat configuration dialog classes
+ *   Summary:	QZedStat configuration dialog classes
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -15,7 +15,7 @@
 #include "Exception.h"
 
 
-using namespace QDirStat;
+using namespace QZedStat;
 
 
 ListEditor::ListEditor( QWidget * parent ):

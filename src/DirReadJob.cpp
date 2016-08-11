@@ -1,6 +1,6 @@
 /*
  *   File name: DirReadJob.cpp
- *   Summary:	Support classes for QDirStat
+ *   Summary:	Support classes for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -22,7 +22,7 @@
 #include "Exception.h"
 
 
-using namespace QDirStat;
+using namespace QZedStat;
 
 
 DirReadJob::DirReadJob( DirTree * tree,
@@ -172,7 +172,7 @@ void LocalDirReadJob::startReading()
 		    }
 		    else		// non-directory child
 		    {
-			if ( entryName == defaultCacheName )	// .qdirstat.cache.gz found?
+			if ( entryName == defaultCacheName )	// .QZedStat.cache.gz found?
 			{
 			    logDebug() << "Found cache file " << defaultCacheName << endl;
 

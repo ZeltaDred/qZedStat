@@ -12,11 +12,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>QDirStat</string>
+   <string>QZedStat</string>
   </property>
   <property name="windowIcon">
    <iconset resource="icons.qrc">
-    <normaloff>:/icons/qdirstat.png</normaloff>:/icons/qdirstat.png</iconset>
+    <normaloff>:/icons/QZedStat.png</normaloff>:/icons/QZedStat.png</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -25,8 +25,8 @@
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
-      <widget class="QDirStat::DirTreeView" name="dirTreeView"/>
-      <widget class="QDirStat::TreemapView" name="treemapView"/>
+      <widget class="QZedStat::DirTreeView" name="dirTreeView"/>
+      <widget class="QZedStat::TreemapView" name="treemapView"/>
      </widget>
     </item>
    </layout>
@@ -473,10 +473,10 @@
   <action name="actionAbout">
    <property name="icon">
     <iconset resource="icons.qrc">
-     <normaloff>:/icons/qdirstat.png</normaloff>:/icons/qdirstat.png</iconset>
+     <normaloff>:/icons/QZedStat.png</normaloff>:/icons/QZedStat.png</iconset>
    </property>
    <property name="text">
-    <string>&amp;About QDirStat...</string>
+    <string>&amp;About QZedStat...</string>
    </property>
    <property name="toolTip">
     <string>Show version, copyright and license information about this program.</string>
@@ -521,10 +521,10 @@
      <normaloff>:/icons/preferences.png</normaloff>:/icons/preferences.png</iconset>
    </property>
    <property name="text">
-    <string>&amp;Configure QDirStat</string>
+    <string>&amp;Configure QZedStat</string>
    </property>
    <property name="toolTip">
-    <string>Configure QDirStat</string>
+    <string>Configure QZedStat</string>
    </property>
   </action>
   <action name="actionVerboseSelection">
@@ -567,12 +567,12 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>QDirStat::DirTreeView</class>
+   <class>QZedStat::DirTreeView</class>
    <extends>QTreeView</extends>
    <header>DirTreeView.h</header>
   </customwidget>
   <customwidget>
-   <class>QDirStat::TreemapView</class>
+   <class>QZedStat::TreemapView</class>
    <extends>QGraphicsView</extends>
    <header>TreemapView.h</header>
   </customwidget>

@@ -10,7 +10,7 @@
 #include <algorithm>
 #include "FileInfoSorter.h"
 
-using namespace QDirStat;
+using namespace QZedStat;
 
 
 bool FileInfoSorter::operator() ( FileInfo * a, FileInfo * b )

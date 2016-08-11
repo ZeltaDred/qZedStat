@@ -14,7 +14,7 @@
 #include "FileInfoSet.h"
 
 
-namespace QDirStat
+namespace QZedStat
 {
     class FileInfo;
 
@@ -69,6 +69,6 @@ namespace QDirStat
 
 	FileInfoSet _items;
     };
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 #endif	// Refresher_h

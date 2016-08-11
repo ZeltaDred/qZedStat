@@ -1,6 +1,6 @@
 /*
  *   File name: SettingsHelpers.h
- *   Summary:	Helper functions for QSettings for QDirStat
+ *   Summary:	Helper functions for QSettings for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -16,7 +16,7 @@
 class QSettings;
 
 
-namespace QDirStat
+namespace QZedStat
 {
     /**
      * Read a color in RGB format (#RRGGBB) from the settings.
@@ -88,6 +88,6 @@ namespace QDirStat
      **/
     QMap<int, QString> patternSyntaxMapping();
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 #endif	// SettingsHelpers_h

@@ -1,6 +1,6 @@
 /*
  *   File name: Trash.h
- *   Summary:	Implemementation of the XDG Trash spec for QDirStat
+ *   Summary:	Implemementation of the XDG Trash spec for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>

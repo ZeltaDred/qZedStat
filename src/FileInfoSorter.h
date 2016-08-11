@@ -14,7 +14,7 @@
 #include "DataColumns.h"
 
 
-namespace QDirStat
+namespace QZedStat
 {
     /**
      * Functor class for sorting FileInfo objects with C++ STL sorting
@@ -59,6 +59,6 @@ namespace QDirStat
 
     };	   // class FileInfoSorter
 
-}      // namespace QDirStat
+}      // namespace QZedStat
 
 #endif // FileInfoSorter_h

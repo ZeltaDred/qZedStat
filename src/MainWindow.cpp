@@ -1,6 +1,6 @@
 /*
  *   File name: MainWindow.cpp
- *   Summary:	QDirStat main window
+ *   Summary:	QZedStat main window
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -38,12 +38,12 @@
 #include "Version.h"
 
 
-using namespace QDirStat;
+using namespace QZedStat;
 
-using QDirStat::DataColumns;
-using QDirStat::DirTreeModel;
-using QDirStat::SelectionModel;
-using QDirStat::CleanupCollection;
+using QZedStat::DataColumns;
+using QZedStat::DirTreeModel;
+using QZedStat::SelectionModel;
+using QZedStat::CleanupCollection;
 
 
 MainWindow::MainWindow():
@@ -300,7 +300,7 @@ void MainWindow::updateActions()
 
 void MainWindow::readSettings()
 {
-    QDirStat::Settings settings;
+    QZedStat::Settings settings;
     settings.beginGroup( "MainWindow" );
 
     _statusBarTimeout	 = settings.value( "StatusBarTimeoutMillisec", 3000 ).toInt();
@@ -326,7 +326,7 @@ void MainWindow::readSettings()
 
 void MainWindow::writeSettings()
 {
-    QDirStat::Settings settings;
+    QZedStat::Settings settings;
     settings.beginGroup( "MainWindow" );
 
     settings.setValue( "StatusBarTimeoutMillisec", _statusBarTimeout );
@@ -385,7 +385,7 @@ void MainWindow::busyDisplay()
 
     // During reading, PercentBarCol contains the number of read jobs.
 
-    int sortCol = QDirStat::DataColumns::toViewCol( QDirStat::PercentBarCol );
+    int sortCol = QZedStat::DataColumns::toViewCol( QZedStat::PercentBarCol );
     _ui->dirTreeView->sortByColumn( sortCol, Qt::DescendingOrder );
 
     if ( ! _selectionModel->currentBranch() )
@@ -399,7 +399,7 @@ void MainWindow::busyDisplay()
 void MainWindow::idleDisplay()
 {
     updateActions();
-    int sortCol = QDirStat::DataColumns::toViewCol( QDirStat::PercentNumCol );
+    int sortCol = QZedStat::DataColumns::toViewCol( QZedStat::PercentNumCol );
     _ui->dirTreeView->sortByColumn( sortCol, Qt::DescendingOrder );
 
     if ( ! _selectionModel->currentBranch() )
@@ -522,7 +522,7 @@ void MainWindow::readCache( const QString & cacheFileName )
 void MainWindow::askReadCache()
 {
     QString fileName = QFileDialog::getOpenFileName( this, // parent
-						     tr( "Select QDirStat cache file" ),
+						     tr( "Select QZedStat cache file" ),
 						     DEFAULT_CACHE_NAME );
     if ( ! fileName.isEmpty() )
 	readCache( fileName );
@@ -532,7 +532,7 @@ void MainWindow::askReadCache()
 void MainWindow::askWriteCache()
 {
     QString fileName = QFileDialog::getSaveFileName( this, // parent
-						     tr( "Enter name for QDirStat cache file"),
+						     tr( "Enter name for QZedStat cache file"),
 						     DEFAULT_CACHE_NAME );
     if ( ! fileName.isEmpty() )
     {
@@ -744,10 +744,10 @@ void MainWindow::toggleVerboseSelection()
 
 void MainWindow::showAboutDialog()
 {
-    QString homePage = "https://github.com/shundhammer/qdirstat";
-    QString mailTo   = "qdirstat@gmx.de";
+    QString homePage = "https://github.com/shundhammer/QZedStat";
+    QString mailTo   = "QZedStat@gmx.de";
 
-    QString text = "<h2>QDirStat " QDIRSTAT_VERSION "</h2>";
+    QString text = "<h2>QZedStat " QZedStat_VERSION "</h2>";
     text += "<p>";
     text += tr( "Qt-based directory statistics -- showing where all your disk space has gone "
 		" and trying to help you to clean it up." );
@@ -769,7 +769,7 @@ void MainWindow::showAboutDialog()
 		"be held responsible for anything like that. Use this program at your own risk." );
     text += "</p>";
 
-    QMessageBox::about( this, tr( "About QDirStat" ), text );
+    QMessageBox::about( this, tr( "About QZedStat" ), text );
 }
 
 
@@ -793,7 +793,7 @@ void MainWindow::itemClicked( const QModelIndex & index )
 
 	logDebug() << "Clicked row " << index.row()
 		   << " col " << index.column()
-		   << " (" << QDirStat::DataColumns::fromViewCol( index.column() ) << ")"
+		   << " (" << QZedStat::DataColumns::fromViewCol( index.column() ) << ")"
 		   << "\t" << item
 		   << endl;
 	// << " data(0): " << index.model()->data( index, 0 ).toString()

@@ -1,6 +1,6 @@
 /*
  *   File name: Cleanup.cpp
- *   Summary:	QDirStat classes to reclaim disk space
+ *   Summary:	QZedStat classes to reclaim disk space
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -25,7 +25,7 @@
 #define SIMULATE_COMMAND	1
 #define WAIT_TIMEOUT_MILLISEC	30000
 
-using namespace QDirStat;
+using namespace QZedStat;
 
 
 Cleanup::Cleanup( QString   command,
@@ -380,13 +380,13 @@ const QMap<QString, QString> & Cleanup::desktopSpecificApps()
 
     if ( apps.isEmpty() )
     {
-	QString desktop = QString::fromUtf8( qgetenv( "QDIRSTAT_DESKTOP" ) );
+	QString desktop = QString::fromUtf8( qgetenv( "QZedStat_DESKTOP" ) );
 
 	if ( desktop.isEmpty() )
 	     desktop = QString::fromUtf8( qgetenv( "XDG_CURRENT_DESKTOP" ) );
 	else
 	{
-	    logDebug() << "Overriding $XDG_CURRENT_DESKTOP with $QDIRSTAT_DESKTOP (\""
+	    logDebug() << "Overriding $XDG_CURRENT_DESKTOP with $QZedStat_DESKTOP (\""
 		       << desktop << "\")" << endl;
 	}
 
@@ -405,7 +405,7 @@ const QMap<QString, QString> & Cleanup::desktopSpecificApps()
 		// KDE konsole misbehaves in every way possible:
 		//
 		// It cannot be started in the background from a cleanup action,
-		// it will terminate when QDirStat terminates,
+		// it will terminate when QZedStat terminates,
 		// and it doesn't give a shit about its current working directory.
 		//
 		// After having wasted four hours to get that thing to cooperate,

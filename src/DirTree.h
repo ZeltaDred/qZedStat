@@ -1,6 +1,6 @@
 /*
  *   File name: DirTree.h
- *   Summary:	Support classes for QDirStat
+ *   Summary:	Support classes for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -21,7 +21,7 @@
 #include "DirReadJob.h"
 
 
-namespace QDirStat
+namespace QZedStat
 {
     class DirReadJob;
     class FileInfoSet;
@@ -163,7 +163,7 @@ namespace QDirStat
 	 *
 	 * Notice: This can only be avoided with local directories where the
 	 * device number a file resides on can be obtained.
-	 * Remember, that's what this QDirStat business is all about.  ;-)
+	 * Remember, that's what this QZedStat business is all about.  ;-)
 	 **/
 	bool crossFileSystems() const { return _crossFileSystems; }
 
@@ -354,7 +354,7 @@ namespace QDirStat
 
     };	// class DirTree
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 
 #endif // ifndef DirTree_h

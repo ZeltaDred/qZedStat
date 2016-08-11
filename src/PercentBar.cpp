@@ -19,7 +19,7 @@
 #include "Logger.h"
 
 
-using namespace QDirStat;
+using namespace QZedStat;
 
 
 PercentBarDelegate::PercentBarDelegate( QTreeView * treeView ):
@@ -165,7 +165,7 @@ QSize PercentBarDelegate::sizeHint( const QStyleOptionViewItem & option,
 
 
 
-namespace QDirStat
+namespace QZedStat
 {
     void paintPercentBar( float		 percent,
 			  QPainter *	 painter,
@@ -268,4 +268,4 @@ namespace QDirStat
 	}
     }
 
-} // namespace QDirStat
+} // namespace QZedStat

@@ -1,6 +1,6 @@
 /*
  *   File name: FileInfoIterators.h
- *   Summary:	Support classes for QDirStat - DirTree iterators
+ *   Summary:	Support classes for QZedStat - DirTree iterators
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -15,7 +15,7 @@
 #include "FileInfo.h"
 
 
-namespace QDirStat
+namespace QZedStat
 {
     /**
      * Iterator class for children of a @ref FileInfo object. For optimum
@@ -148,7 +148,7 @@ namespace QDirStat
 	int	     _currentIndex;
     }; //
 
-} // namespace QDirStat
+} // namespace QZedStat
 
 
 #endif // ifndef FileInfoIterators_h

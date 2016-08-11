@@ -23,7 +23,7 @@
  * that tree to this class; the ActionManager uses Qt's introspection to find
  * the matching QActions.
  **/
-namespace QDirStat
+namespace QZedStat
 {
 
     class ActionManager
@@ -75,7 +75,7 @@ namespace QDirStat
 
     };	// class ActionManager
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 
 #endif	// ActionManager_h

@@ -1,6 +1,6 @@
 /*
  *   File name: ConfigDialog.h
- *   Summary:	QDirStat configuration dialog classes
+ *   Summary:	QZedStat configuration dialog classes
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -14,7 +14,7 @@
 #include "ui_config-dialog.h"
 
 
-namespace QDirStat
+namespace QZedStat
 {
     class GeneralConfigPage;
     class CleanupConfigPage;
@@ -23,7 +23,7 @@ namespace QDirStat
 
 
     /**
-     * Configuration dialog for QDirStat.
+     * Configuration dialog for QZedStat.
      *
      * This class is only the wrapper for the individual config pages; it
      * maintains the tab widget to switch between the pages (the tabs) and the
@@ -124,6 +124,6 @@ namespace QDirStat
 
     };	// class ConfigDialog
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 #endif	// ConfigDialog_h

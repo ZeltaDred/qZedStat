@@ -20,7 +20,7 @@
 #include "FileInfo.h"
 
 
-namespace QDirStat
+namespace QZedStat
 {
     class DirTree;
     class DirInfo;
@@ -68,10 +68,10 @@ namespace QDirStat
 	 * Example:
 	 *
 	 *   DataColumnList col;
-	 *   col << QDirStat::NameCol,
-	 *	 << QDirStat::PercentBarCol,
-	 *	 << QDirStat::PercentNumCol,
-	 *	 << QDirStat::TotalSizeCol;
+	 *   col << QZedStat::NameCol,
+	 *	 << QZedStat::PercentBarCol,
+	 *	 << QZedStat::PercentNumCol,
+	 *	 << QZedStat::TotalSizeCol;
 	 *   dirTreeModel->setColumns( col );
 	 */
 	void setColumns( const DataColumnList & columns );
@@ -443,6 +443,6 @@ namespace QDirStat
     }
 
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 #endif // DirTreeModel_h

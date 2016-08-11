@@ -18,7 +18,7 @@ class QAction;
 class QMenu;
 
 
-namespace QDirStat
+namespace QZedStat
 {
     class DirTreeView;
 
@@ -181,6 +181,6 @@ namespace QDirStat
 
     };	// class HeaderTweaker
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 #endif	// HeaderTweaker_h

@@ -1,6 +1,6 @@
 /*
  *   File name: CleanupCollection.cpp
- *   Summary:	QDirStat classes to reclaim disk space
+ *   Summary:	QZedStat classes to reclaim disk space
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -24,7 +24,7 @@
 
 #define MAX_URLS_IN_CONFIRMATION_POPUP 7
 
-using namespace QDirStat;
+using namespace QZedStat;
 
 
 CleanupCollection::CleanupCollection( SelectionModel * selectionModel,

@@ -1,6 +1,6 @@
 /*
  *   File name: MimeCategorizer.h
- *   Summary:	Support classes for QDirStat
+ *   Summary:	Support classes for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -13,7 +13,7 @@
 #include "MimeCategory.h"
 
 
-namespace QDirStat
+namespace QZedStat
 {
     class FileInfo;
 
@@ -21,7 +21,7 @@ namespace QDirStat
      * Class to determine the MimeCategory of filenames.
      *
      * This class is optimized for performance since the names of all files in
-     * QDirStat's DirTree need to be checked (something in the order of 200,000
+     * QZedStat's DirTree need to be checked (something in the order of 200,000
      * in a typical Linux root file system).
      **/
     class MimeCategorizer: public QObject
@@ -129,6 +129,6 @@ namespace QDirStat
 
     };	// class MimeCategorizer
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 #endif	// MimeCategorizer_h

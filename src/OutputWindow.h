@@ -18,7 +18,7 @@
 #include "Process.h"
 
 class QCloseEvent;
-using QDirStat::Process;
+using QZedStat::Process;
 
 
 /**
@@ -27,7 +27,7 @@ using QDirStat::Process;
  * are displayed in different colors.
  *
  * This class can watch more than one process: It can watch a sequence of
- * processes, such as QDirStat cleanup actions as they are invoked for each
+ * processes, such as QZedStat cleanup actions as they are invoked for each
  * selected item one after another, or even multiple processes running in
  * parallel (which may make the output a bit messy, of course).
  *

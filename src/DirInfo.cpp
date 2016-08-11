@@ -1,6 +1,6 @@
 /*
  *   File name: DirInfo.cpp
- *   Summary:	Support classes for QDirStat
+ *   Summary:	Support classes for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -15,7 +15,7 @@
 #include "FileInfoSorter.h"
 #include "Exception.h"
 
-using namespace QDirStat;
+using namespace QZedStat;
 
 
 DirInfo::DirInfo( DirTree * tree,

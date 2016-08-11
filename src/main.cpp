@@ -1,6 +1,6 @@
 /*
  *   File name: main.cpp
- *   Summary:	QDirStat main program
+ *   Summary:	QZedStat main program
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -16,7 +16,7 @@
 #include "Logger.h"
 
 using std::cerr;
-static const char * progName = "qdirstat";
+static const char * progName = "QZedStat";
 static bool fatal = false;
 
 
@@ -38,11 +38,11 @@ void usage( const QStringList & argList )
 
 int main( int argc, char *argv[] )
 {
-    Logger logger( QString( "/tmp/qdirstat-%1.log" ).arg( getuid() ) );
+    Logger logger( QString( "/tmp/QZedStat-%1.log" ).arg( getuid() ) );
 
     // Set org/app name for QSettings
-    QCoreApplication::setOrganizationName( "QDirStat" );
-    QCoreApplication::setApplicationName ( "QDirStat" );
+    QCoreApplication::setOrganizationName( "QZedStat" );
+    QCoreApplication::setApplicationName ( "QZedStat" );
 
     QApplication app( argc, argv);
     QStringList argList = QCoreApplication::arguments();

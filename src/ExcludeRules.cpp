@@ -1,6 +1,6 @@
 /*
  *   File name:	ExcludeRules.cpp
- *   Summary:	Support classes for QDirStat
+ *   Summary:	Support classes for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -17,7 +17,7 @@
 
 #define VERBOSE_EXCLUDE_MATCHES	1
 
-using namespace QDirStat;
+using namespace QZedStat;
 
 
 ExcludeRule::ExcludeRule( const QRegExp & regexp, bool useFullPath ):

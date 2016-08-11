@@ -1,6 +1,6 @@
 /*
  *   File name: DirTreeCache.h
- *   Summary:	QDirStat cache reader / writer
+ *   Summary:	QZedStat cache reader / writer
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -15,13 +15,13 @@
 #include <zlib.h>
 #include "DirTree.h"
 
-#define DEFAULT_CACHE_NAME	".qdirstat.cache.gz"
+#define DEFAULT_CACHE_NAME	".QZedStat.cache.gz"
 #define CACHE_FORMAT_VERSION	"1.0"
 #define MAX_CACHE_LINE_LEN	1024
 #define MAX_FIELDS_PER_LINE	32
 
 
-namespace QDirStat
+namespace QZedStat
 {
     class CacheWriter
     {
@@ -188,7 +188,7 @@ namespace QDirStat
     protected:
 
 	/**
-	 * Check this cache's header (see if it is a QDirStat cache at all)
+	 * Check this cache's header (see if it is a QZedStat cache at all)
 	 **/
 	bool checkHeader();
 
@@ -285,7 +285,7 @@ namespace QDirStat
         QRegExp         _multiSlash;
     };
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 
 #endif // ifndef DirTreeCache_h

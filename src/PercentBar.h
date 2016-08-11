@@ -18,7 +18,7 @@ typedef QList<QColor> ColorList;
 class QTreeView;
 
 
-namespace QDirStat
+namespace QZedStat
 {
     /**
      * Item delegate class to paint the percent bar in the PercentBarCol.
@@ -139,6 +139,6 @@ namespace QDirStat
     QColor contrastingColor( const QColor &desiredColor,
 			     const QColor &contrastColor );
 
-}      // namespace QDirStat
+}      // namespace QZedStat
 
 #endif // PercentBar_h

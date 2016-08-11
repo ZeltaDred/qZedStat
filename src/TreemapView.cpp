@@ -1,6 +1,6 @@
 /*
  *   File name: TreemapView.cpp
- *   Summary:	View widget for treemap rendering for QDirStat
+ *   Summary:	View widget for treemap rendering for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -23,7 +23,7 @@
 #include "MimeCategorizer.h"
 
 
-using namespace QDirStat;
+using namespace QZedStat;
 
 #define UpdateMinSize	      20
 #define RebuildDelayMillisec 200

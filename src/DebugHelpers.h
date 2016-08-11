@@ -1,6 +1,6 @@
 /*
  *   File name: DebugHelpers.h
- *   Summary:	Debugging helper functions for QDirstat
+ *   Summary:	Debugging helper functions for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -20,8 +20,8 @@ class QAbstractItemModel;
 
 namespace Debug
 {
-    using QDirStat::FileInfo;
-    using QDirStat::FileInfoList;
+    using QZedStat::FileInfo;
+    using QZedStat::FileInfoList;
 
     /**
      * Dump the direct children of 'dir' to the log.

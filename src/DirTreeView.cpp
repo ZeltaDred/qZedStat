@@ -21,7 +21,7 @@
 #include "Logger.h"
 
 
-using namespace QDirStat;
+using namespace QZedStat;
 
 
 DirTreeView::DirTreeView( QWidget * parent ):

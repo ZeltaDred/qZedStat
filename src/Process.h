@@ -13,7 +13,7 @@
 #include <QProcess>
 
 
-namespace QDirStat
+namespace QZedStat
 {
     /**
      * Thin compatibility layer around QProcess to maintain backwards
@@ -49,6 +49,6 @@ namespace QDirStat
 #endif	// Qt < 5.1.0
 
     };	// class Process
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 #endif	// Process_h

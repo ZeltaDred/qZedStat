@@ -1,6 +1,6 @@
 /*
  *   File name: DebugHelpers.cpp
- *   Summary:	Debugging helper functions for QDirstat
+ *   Summary:	Debugging helper functions for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -17,7 +17,7 @@
 
 namespace Debug
 {
-    using namespace QDirStat;
+    using namespace QZedStat;
 
     void dumpDirectChildren( FileInfo * dir )
     {
@@ -65,7 +65,7 @@ namespace Debug
     {
 	logDebug() << "Direct children of " << dir << " by size:" << endl;
 
-	QDirStat::FileInfoSortedBySizeIterator it( dir );
+	QZedStat::FileInfoSortedBySizeIterator it( dir );
 
 	while ( *it )
 	{

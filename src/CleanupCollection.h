@@ -1,6 +1,6 @@
 /*
  *   File name:	CleanupCollection.h
- *   Summary:	QDirStat classes to reclaim disk space
+ *   Summary:	QZedStat classes to reclaim disk space
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -22,7 +22,7 @@ class QMenu;
 class QToolBar;
 
 
-namespace QDirStat
+namespace QZedStat
 {
     class SelectionModel;
     class FileInfoSet;
@@ -230,7 +230,7 @@ namespace QDirStat
 	QList<QPointer<QMenu> >	   _menus;
 	QList<QPointer<QToolBar> > _toolBars;
     };
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 
 #endif // ifndef CleanupCollection_h

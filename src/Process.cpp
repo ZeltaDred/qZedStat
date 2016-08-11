@@ -9,7 +9,7 @@
 
 #include <Process.h>
 
-using namespace QDirStat;
+using namespace QZedStat;
 
 
 Process::Process( QObject *parent ):

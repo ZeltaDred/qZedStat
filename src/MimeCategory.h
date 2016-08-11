@@ -1,6 +1,6 @@
 /*
  *   File name: MimeCategory.h
- *   Summary:	Support classes for QDirStat
+ *   Summary:	Support classes for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -18,7 +18,7 @@
 #include <QTextStream>
 
 
-namespace QDirStat
+namespace QZedStat
 {
     typedef QList<QRegExp> QRegExpList;
 
@@ -28,7 +28,7 @@ namespace QDirStat
      * video/x-flic etc.
      *
      * The idea is to collect those detailed types in one category to give it
-     * common attributes like the QDirStat treemap color so the user can get an
+     * common attributes like the QZedStat treemap color so the user can get an
      * impression how much disk space each type consumes. If there are too many
      * different colors, it is difficult to tell which is which, so we are
      * summarizing similar MIME types into their common category.
@@ -191,6 +191,6 @@ namespace QDirStat
     }
 
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 #endif	// MimeCategory_h

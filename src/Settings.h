@@ -1,6 +1,6 @@
 /*
  *   File name: Settings.h
- *   Summary:	Specialized settings classes for QDirStat
+ *   Summary:	Specialized settings classes for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -13,11 +13,11 @@
 #include <QStringList>
 
 
-namespace QDirStat
+namespace QZedStat
 {
     /**
      * Specialized QSettings subclass for generic settings, i.e. the main
-     * config file ~/.config/QDirStat/QDirStat.conf
+     * config file ~/.config/QZedStat/QZedStat.conf
      *
      * This class takes care of cleaning up leftovers of previous config file
      * formats, for example when certain settings groups (cleanups, mime
@@ -184,6 +184,6 @@ namespace QDirStat
 	void migrate();
     };
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 #endif	// Settings_h

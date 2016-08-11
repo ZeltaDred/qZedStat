@@ -1,6 +1,6 @@
 /*
  *   File name: Exception.cpp
- *   Summary:	Exception classes for QDirstat
+ *   Summary:	Exception classes for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>

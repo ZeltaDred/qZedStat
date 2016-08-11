@@ -1,4 +1,4 @@
-# qmake .pro file for qdirstat/src
+# qmake .pro file for QZedStat/src
 #
 # Go to the project toplevel dir and build all Makefiles:
 #
@@ -21,8 +21,8 @@ LIBS		+= -lz
 major_is_less_5 = $$find(QT_MAJOR_VERSION, [234])
 !isEmpty(major_is_less_5):DEFINES += 'Q_DECL_OVERRIDE=""'
 
-TARGET		 = qdirstat
-TARGET.files	 = qdirstat
+TARGET		 = QZedStat
+TARGET.files	 = QZedStat
 TARGET.path	 = /usr/bin
 INSTALLS	+= TARGET desktop icons
 
@@ -129,5 +129,5 @@ RESOURCES = icons.qrc
 desktop.files = *.desktop
 desktop.path  = /usr/share/applications
 
-icons.files   = icons/qdirstat.png
+icons.files   = icons/QZedStat.png
 icons.path    = /usr/share/icons/hicolor/32x32/apps

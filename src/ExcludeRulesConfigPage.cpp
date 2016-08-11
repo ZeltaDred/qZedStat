@@ -1,6 +1,6 @@
 /*
  *   File name: ExcludeRulesConfigPage.h
- *   Summary:	QDirStat configuration dialog classes
+ *   Summary:	QZedStat configuration dialog classes
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -12,7 +12,7 @@
 #include "Exception.h"
 
 
-using namespace QDirStat;
+using namespace QZedStat;
 
 // This is a mess that became necessary because Qt's moc cannot handle template
 // classes. Yes, this is ugly.

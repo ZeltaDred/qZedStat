@@ -15,7 +15,7 @@
 class QAction;
 
 
-namespace QDirStat
+namespace QZedStat
 {
     class PercentBarDelegate;
     class HeaderTweaker;
@@ -24,7 +24,7 @@ namespace QDirStat
 
 
     /**
-     * Tree view widget for the QDirStat directory tree.
+     * Tree view widget for the QZedStat directory tree.
      *
      * This is a thin wrapper around TreeView that takes care about basic setup
      * and configuration of the tree view and adds support for synchronizing
@@ -32,7 +32,7 @@ namespace QDirStat
      * DirTreeView.
      *
      * The Qt model / view abstraction is kept up as good as possible, but this
-     * widget is really meant to be used with a QDirStat::DirTreeModel and not
+     * widget is really meant to be used with a QZedStat::DirTreeModel and not
      * just any random subclass of QAbstractItemModel.
      **/
     class DirTreeView: public QTreeView
@@ -108,7 +108,7 @@ namespace QDirStat
 
     };	// class DirTreeView
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 
 #endif	// DirTreeView_h

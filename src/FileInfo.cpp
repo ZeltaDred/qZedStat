@@ -1,6 +1,6 @@
 /*
  *   File name: FileInfo.cpp
- *   Summary:	Support classes for QDirStat
+ *   Summary:	Support classes for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -27,7 +27,7 @@
 #define FRAGMENT_SIZE	2048
 
 
-using namespace QDirStat;
+using namespace QZedStat;
 
 
 FileInfo::FileInfo( DirTree    * tree,
@@ -340,7 +340,7 @@ QString FileInfo::dotEntryName()
 //---------------------------------------------------------------------------
 
 
-QString QDirStat::formatSize( FileSize lSize )
+QString QZedStat::formatSize( FileSize lSize )
 {
     QString sizeString;
     int	    unitIndex = 0;
@@ -391,7 +391,7 @@ DirInfo * FileInfo::toDirInfo()
 }
 
 
-QString QDirStat::formatTime( time_t rawTime )
+QString QZedStat::formatTime( time_t rawTime )
 {
     if ( rawTime == (time_t) 0 )
 	return "";
@@ -401,7 +401,7 @@ QString QDirStat::formatTime( time_t rawTime )
 }
 
 
-QString QDirStat::baseName( const QString & fileName )
+QString QZedStat::baseName( const QString & fileName )
 {
     QStringList segments = fileName.split( '/', QString::SkipEmptyParts );
     return segments.isEmpty() ? "" : segments.last();

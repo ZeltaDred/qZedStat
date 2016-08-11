@@ -14,7 +14,7 @@
 #include "Logger.h"
 
 
-using namespace QDirStat;
+using namespace QZedStat;
 
 ActionManager * ActionManager::_instance = 0;
 

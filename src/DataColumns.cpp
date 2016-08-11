@@ -14,7 +14,7 @@
 #include "Exception.h"
 
 
-using namespace QDirStat;
+using namespace QZedStat;
 
 DataColumns * DataColumns::_instance = 0;
 

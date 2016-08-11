@@ -1,6 +1,6 @@
 /*
  *   File name: DirTreeCache.cpp
- *   Summary:	QDirStat cache reader / writer
+ *   Summary:	QZedStat cache reader / writer
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -31,7 +31,7 @@
 
 
 
-using namespace QDirStat;
+using namespace QZedStat;
 
 
 CacheWriter::CacheWriter( const QString & fileName, DirTree *tree )
@@ -59,7 +59,7 @@ bool CacheWriter::writeCache( const QString & fileName, DirTree *tree )
 	return false;
     }
 
-    gzprintf( cache, "[qdirstat %s cache file]\n", CACHE_FORMAT_VERSION );
+    gzprintf( cache, "[QZedStat %s cache file]\n", CACHE_FORMAT_VERSION );
     gzprintf( cache,
 	     "# Do not edit!\n"
 	     "#\n"
@@ -536,14 +536,14 @@ bool CacheReader::checkHeader()
     QString line( _line );
     splitLine();
 
-    // Check for    [qdirstat <version> cache file]
+    // Check for    [QZedStat <version> cache file]
     // or	    [kdirstat <version> cache file]
 
     if ( fieldsCount() != 4 )	_ok = false;
 
     if ( _ok )
     {
-	if ( ( strcmp( field( 0 ), "[qdirstat" ) != 0 &&
+	if ( ( strcmp( field( 0 ), "[QZedStat" ) != 0 &&
 	       strcmp( field( 0 ), "[kdirstat" ) != 0	) ||
 	     strcmp( field( 2 ), "cache"     ) != 0 ||
 	     strcmp( field( 3 ), "file]"     ) != 0 )

@@ -17,10 +17,10 @@
 #include "Logger.h"
 #include "Exception.h"
 
-using QDirStat::readColorEntry;
-using QDirStat::writeColorEntry;
-using QDirStat::readFontEntry;
-using QDirStat::writeFontEntry;
+using QZedStat::readColorEntry;
+using QZedStat::writeColorEntry;
+using QZedStat::readFontEntry;
+using QZedStat::writeFontEntry;
 
 
 #define CONNECT_ACTION(ACTION, RECEIVER, RCVR_SLOT) \
@@ -516,7 +516,7 @@ void OutputWindow::timeoutShow()
 
 void OutputWindow::readSettings()
 {
-    QDirStat::Settings settings;
+    QZedStat::Settings settings;
     settings.beginGroup( "OutputWindow" );
 
     _terminalBackground	 = readColorEntry( settings, "TerminalBackground", QColor( Qt::black  ) );
@@ -534,7 +534,7 @@ void OutputWindow::readSettings()
 
 void OutputWindow::writeSettings()
 {
-    QDirStat::Settings settings;
+    QZedStat::Settings settings;
     settings.beginGroup( "OutputWindow" );
 
     writeColorEntry( settings, "TerminalBackground", _terminalBackground  );

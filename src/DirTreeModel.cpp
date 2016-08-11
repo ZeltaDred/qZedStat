@@ -19,7 +19,7 @@
 #include "DebugHelpers.h"
 
 
-using namespace QDirStat;
+using namespace QZedStat;
 
 
 DirTreeModel::DirTreeModel( QObject * parent ):

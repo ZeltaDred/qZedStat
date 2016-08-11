@@ -1,6 +1,6 @@
 /*
  *   File name: ExcludeRules.h
- *   Summary:	Support classes for QDirStat
+ *   Summary:	Support classes for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -19,7 +19,7 @@
 #include "ListMover.h"
 
 
-namespace QDirStat
+namespace QZedStat
 {
     /**
      * One single exclude rule to check text (file names) against.
@@ -251,7 +251,7 @@ namespace QDirStat
 	return stream;
     }
 
-}	// namespace QDirStat
+}	// namespace QZedStat
 
 
 #endif // ifndef ExcludeRules_h

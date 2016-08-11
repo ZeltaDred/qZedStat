@@ -1,6 +1,6 @@
 /*
  *   File name: MimeCategory.cpp
- *   Summary:	Support classes for QDirStat
+ *   Summary:	Support classes for QZedStat
  *   License:	GPL V2 - See file LICENSE for details.
  *
  *   Author:	Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
@@ -12,7 +12,7 @@
 #include "Exception.h"
 
 
-using namespace QDirStat;
+using namespace QZedStat;
 
 
 MimeCategory::MimeCategory( const QString & name, const QColor & color ):

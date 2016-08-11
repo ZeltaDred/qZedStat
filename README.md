@@ -1,37 +1,36 @@
-# QDirStat
+# QZedStat
 
-Qt-based directory statistics: KDirStat without any KDE -- from the author of
-the original KDirStat.
+Qt-based directory statistics:
 
-(c) 2015 Stefan Hundhammer <Stefan.Hundhammer@gmx.de>
+(c) 2016 Douglas Osborn <douglas.osborn@dmail.dixie.edu>
 
 Target Platforms: Linux, BSD, Unix-like systems
 
 License: GPL V2
 
-Updated: 2016-08-10
+Updated: 2016-08-11
 
 
 ## Overview
 
-QDirStat is a graphical application to show where your disk space has gone and
-to help you to clean it up.
+QZedStat is a fork of the QDirStat ((c) 2015 Stefan Hundhammer <Stefan.Hundhammer@gmx.de> ) program
+with a slightly different focus.   It leverages many of the existing features of qDirStat (Directory scanning,
+file type identification by filename suffix, graphical representaion of  file tree structure) to drive source 
+code  analysis tools.
 
-This is a Qt-only port of the old Qt3/KDE3-based KDirStat, now based on the
-latest Qt 5. It does not need any KDE libs or infrastructure. It runs on every
-X11-based desktop on Linux, BSD and other Unix-like systems.
+The cleanup features of qDirStat have been removed.  Since full file tree access on *nix systems generally
+requires elevated permissions, it was deemed  safer to disable these features  than to attempt to add safety checks
+to all the possible cleanup actions that can be configured in the original  program.
 
-QDirStat has a number of new features compared to KDirStat. To name a few:
+The Mime configuration categories have been 'hijacked' to segregate and identify source code files related to particular
+programming languages.  The  file suffix defaults that are hard coded are the result of an attempt to maintain
+some compatability  with some of the other  open-source code analysis utilities available.
 
-- Multi-selection in both the tree and the treemap.
-- Unlimited number of user-defined cleanup actions.
-- Properly show errors of cleanup actions (and their output, if desired).
-- File categories (MIME types) and their treemap color are now configurable.
-- Exclude rules for directories are easily configurable.
-- Desktop-agnostic; no longer relies on KDE or any other specific desktop.
 
-See section _New Features_ for more details.
+##  Under Construction   .....
 
+The remainder of this page is currently under construction...   references  to the old program  will be replaced  
+as new ones come available.
 
 
 ## Screenshots
@@ -41,17 +40,6 @@ See section _New Features_ for more details.
 
 _Main window screenshot - notice the multi-selection in the tree and the treemap_
 
-
-![Cleanup Action Output Screenshot]
-(https://github.com/shundhammer/qdirstat/blob/master/screenshots/QDirStat-cleanup-output.png)
-
-_Screenshot of output during cleanup actions. Of course this window is purely optional._
-
-
-![Cleanup Action Configuration Screenshot]
-(https://github.com/shundhammer/qdirstat/blob/master/screenshots/QDirStat-cleanup-config.png)
-
-_Screenshot of cleanup configuration._
 
 ![MIME Categories Configuration Screenshot]
 (https://github.com/shundhammer/qdirstat/blob/master/screenshots/QDirStat-mime-config.png)

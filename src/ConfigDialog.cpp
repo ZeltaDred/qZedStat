@@ -24,10 +24,12 @@ ConfigDialog::ConfigDialog( QWidget * parent ):
 {
     CHECK_NEW( _ui );
     _ui->setupUi( this );
+//
+//  Remove  references to the tab supporting deletion activities
 
-    _cleanupConfigPage = new CleanupConfigPage();
-    CHECK_NEW( _cleanupConfigPage );
-    _ui->pagesTabWidget->addTab( _cleanupConfigPage, tr( "Cleanup Actions" ) );
+//    _cleanupConfigPage = new CleanupConfigPage();
+//    CHECK_NEW( _cleanupConfigPage );
+//    _ui->pagesTabWidget->addTab( _cleanupConfigPage, tr( "Cleanup Actions" ) );
 
     _mimeCategoryConfigPage = new MimeCategoryConfigPage();
     CHECK_NEW( _mimeCategoryConfigPage );
@@ -41,17 +43,17 @@ ConfigDialog::ConfigDialog( QWidget * parent ):
 	     this,		 SLOT  ( apply()   ) );
 
     //
-    // Connect cleanup config page
+    // Connect cleanup config page  ( commented out   dz)
     //
 
-    connect( this,		 SIGNAL( reinit() ),
-	     _cleanupConfigPage, SLOT  ( setup()  ) );
+//    connect( this,		 SIGNAL( reinit() ),
+//	     _cleanupConfigPage, SLOT  ( setup()  ) );
 
-    connect( this,		 SIGNAL( applyChanges() ),
-	     _cleanupConfigPage, SLOT  ( applyChanges() ) );
+//    connect( this,		 SIGNAL( applyChanges() ),
+//	     _cleanupConfigPage, SLOT  ( applyChanges() ) );
 
-    connect( this,		 SIGNAL( discardChanges() ),
-	     _cleanupConfigPage, SLOT  ( discardChanges() ) );
+//    connect( this,		 SIGNAL( discardChanges() ),
+//	     _cleanupConfigPage, SLOT  ( discardChanges() ) );
 
     //
     // Connect mime category config page

@@ -241,7 +241,7 @@ void MimeCategorizer::writeSettings()
 
 void MimeCategorizer::addDefaultCategories()
 {   
-    MimeCategory * ada = new MimeCategory( tr( "Ada" ), Qt::red );
+    MimeCategory * ada = new MimeCategory( tr( "Ada" ), QColor( 0x00, 0x54, 0xe1 ) );
     CHECK_NEW( ada );
     add( ada );
 
@@ -253,7 +253,7 @@ void MimeCategorizer::addDefaultCategories()
                );
 
 
-    MimeCategory * asp = new MimeCategory( tr( "ASP, ASP.NET" ), Qt::green );
+    MimeCategory * asp = new MimeCategory( tr( "ASP, ASP.NET" ), QColor( 0x00, 0x40, 0x80 ) );
     CHECK_NEW( asp );
     add( asp );
 
@@ -263,7 +263,7 @@ void MimeCategorizer::addDefaultCategories()
 			   );
 
 
-    MimeCategory * bash = new MimeCategory( tr( "Bash" ), Qt::green );
+    MimeCategory * bash = new MimeCategory( tr( "Bash" ), QColor( 0x00, 0xdd, 0xff ) );
     CHECK_NEW( bash );
     add( bash );
 
@@ -273,7 +273,7 @@ void MimeCategorizer::addDefaultCategories()
                );
 
 
-    MimeCategory * csh = new MimeCategory( tr( "C Shell" ), Qt::green );
+    MimeCategory * csh = new MimeCategory( tr( "C Shell" ), QColor( 0xff, 0xfd, 0xce ) );
     CHECK_NEW( csh );
     add( csh );
 
@@ -282,7 +282,7 @@ void MimeCategorizer::addDefaultCategories()
                << "tcsh"
                );
 
-    MimeCategory * cshrp = new MimeCategory( tr( "C#" ), Qt::green );
+    MimeCategory * cshrp = new MimeCategory( tr( "C#" ), QColor( 0x21, 0x1b, 0x0c ) );
     CHECK_NEW( cshrp );
     add( cshrp );
 
@@ -290,7 +290,7 @@ void MimeCategorizer::addDefaultCategories()
                << "cs"
                );
 
-    MimeCategory * cee = new MimeCategory( tr( "C/C++" ), Qt::green );
+    MimeCategory * cee = new MimeCategory( tr( "C/C++" ), QColor( 0x17, 0x00, 0x00 ) );
     CHECK_NEW(cee );
     add( cee );
 
@@ -303,169 +303,139 @@ void MimeCategorizer::addDefaultCategories()
                << "hh"
                );
 
-    MimeCategory * images = new MimeCategory( tr( "Images" ), Qt::cyan );
-    CHECK_NEW( images );
-    add( images );
+    MimeCategory * cldf = new MimeCategory( tr( "ColdFusion" ), QColor( 0x00, 0xf1a, 0x64 ) );
+    CHECK_NEW(cldf );
+    add( cldf );
 
-    images->addSuffixes( QStringList()
-			 << "gif"
-			 << "jpeg"
-			 << "jpg"
-			 << "png"
-			 << "tif"
-			 << "tiff"
-			 << "xcf.bz2"
-			 << "xcf.gz"
-			 << "xpm"	 // uncompressed, buy typically tiny
-			 );
+    cldf->addSuffixes( QStringList()
+               << "cfs"
+               );
 
+    MimeCategory * css = new MimeCategory( tr( "CSS" ), QColor( 0x95, 0xbb, 0xef ) );
+    CHECK_NEW(css );
+    add( css );
 
-    MimeCategory * uncompressedImages = new MimeCategory( tr( "Uncompressed Images" ), Qt::red );
-    CHECK_NEW( uncompressedImages );
-    add( uncompressedImages );
+    css->addSuffixes( QStringList()
+               << "css"
+               );
 
-    uncompressedImages->addSuffixes( QStringList()
-				     << "bmp"
-				     << "pbm"
-				     << "pgm"
-				     << "pnm"
-				     << "ppm"
-				     << "xcf"
-				     );
+    MimeCategory * frtrn = new MimeCategory( tr( "Fortran" ), QColor( 0x00, 0x1d, 0x36 ) );
+    CHECK_NEW(frtrn );
+    add( frtrn );
 
+    frtrn->addSuffixes( QStringList()
+               << "f"
+               << "for"
+               << "f77"
+               << "f90"
+               << "f95"
+               << "f03"
+               << "hpf"
+               );
 
-    MimeCategory * videos = new MimeCategory( tr( "Videos" ), QColor( 0xa0, 0xff, 0x00 ) );
-    CHECK_NEW( videos );
-    add( videos );
+    MimeCategory * html = new MimeCategory( tr( "HTML" ), QColor( 0xdc, 0xff, 0xff ) );
+    CHECK_NEW(html );
+    add( html );
 
-    videos->addSuffixes( QStringList()
-			 << "asf"
-			 << "avi"
-			 << "divx"
-			 << "flc"
-			 << "fli"
-			 << "flv"
-			 << "mk3d"
-			 << "mkv"
-			 << "mng"
-			 << "mov"
-			 << "mp2"
-			 << "mp4"
-			 << "mpeg"
-			 << "mpg"
-			 << "ogm"
-			 << "ogv"
-			 << "rm"
-			 << "vdr"
-			 << "vob"
-			 << "webm"
-			 << "wmp"
-			 << "wmv"
-			 );
+    html->addSuffixes( QStringList()
+               << "htm"
+               << "html"
+               << "shtml"
+               << "stm"
+               << "sht"
+               << "oth"
+               << "xhtml"
+               );
 
+    MimeCategory * java = new MimeCategory( tr( "Java" ), QColor( 0xaf, 0x8e, 0x00 ) );
+    CHECK_NEW(java );
+    add( java );
 
-    MimeCategory * music = new MimeCategory( tr( "Music" ), Qt::yellow );
-    CHECK_NEW( music );
-    add( music );
+    java->addSuffixes( QStringList()
+               << "Java"
+               );
 
-    music->addSuffixes( QStringList()
-			<< "aac"
-			<< "f4a"
-			<< "f4b"
-			<< "m4a"
-			<< "m4b"
-			<< "mid"
-			<< "mka"
-			<< "mp3"
-			<< "oga"
-			<< "ogg"
-			<< "ra"
-			<< "rax"
-			<< "wav"
-			<< "wma"
-			);
+    MimeCategory * jvs = new MimeCategory( tr( "JavaScript" ), QColor( 0x3e, 0x3b, 0x34 ) );
+    CHECK_NEW(jvs );
+    add( jvs );
 
+    jvs->addSuffixes( QStringList()
+               << "js"
+               );
 
-    MimeCategory * doc = new MimeCategory( tr( "Documents" ), Qt::blue );
-    CHECK_NEW( doc );
-    add( doc );
+    MimeCategory * pscl = new MimeCategory( tr( "Pascal" ), QColor( 0x24, 0x00, 0x00 ) );
+    CHECK_NEW(pscl );
+    add( pscl );
 
-    doc->addSuffixes( QStringList()
-		      << "doc"
-		      << "docx"
-		      << "dotx"
-		      << "dvi"
-		      << "dvi.bz2"
-		      << "epub"
-		      << "htm"
-		      << "html"
-		      << "md"
-		      << "odb"
-		      << "odc"
-		      << "odg"
-		      << "odp"
-		      << "ods"
-		      << "odt"
-		      << "otc"
-		      << "otp"
-		      << "ots"
-		      << "pdf"
-		      << "potx"
-		      << "ppsx"
-		      << "ppt"
-		      << "pptx"
-		      << "ps"
-		      << "sdc"
-		      << "sdc.gz"
-		      << "sdd"
-		      << "sdp"
-		      << "sdw"
-		      << "sla"
-		      << "sla.gz"
-		      << "slaz"
-                      << "sxi"
-		      << "txt"
-		      << "xls"
-		      << "xlsx"
-		      << "xlt"
-		      << "css"
-		      << "csv"
-		      << "latex"
-		      << "tex"
-		      << "xml"
-		      );
+    pscl->addSuffixes( QStringList()
+               << "pas"
+               << "p"
+               << "pp"
+               << "pa3"
+               << "pa4"
+               << "pa5"
+               );
 
+    MimeCategory * prl = new MimeCategory( tr( "Perl" ), QColor( 0xbd, 0xc7, 0xd9 ) );
+    CHECK_NEW(prl );
+    add( prl );
 
-    MimeCategory * src = new MimeCategory( tr( "Source Files" ), Qt::cyan );
-    CHECK_NEW( src );
-    add( src );
-    src->addSuffixes( QStringList()
-		      << "c" << "cpp" << "cc" << "cxx" << "h" << "hpp" << "ui"
-		      << "pl" << "py" << "rb" << "el"
-		      << "pro" << "cmake"
-		      , Qt::CaseSensitive );
+    prl->addSuffixes( QStringList()
+               << "pl"
+               << "pm"
+               );
 
+    MimeCategory * php = new MimeCategory( tr( "PHP" ), QColor( 0x49, 0x60, 0x7f ) );
+    CHECK_NEW(php );
+    add( php );
 
-    MimeCategory * obj = new MimeCategory( tr( "Object or Generated Files" ), QColor( 0xff, 0xa0, 0x00 ) );
-    CHECK_NEW( obj );
-    add( obj );
+    php->addSuffixes( QStringList()
+               << "php"
+               );
 
-    obj->addSuffixes( QStringList()
-		      << "o" << "lo" << "Po" << "al" << "la" << "moc" << "elc" << "log"
-		      , Qt::CaseSensitive );
+    MimeCategory * pythn = new MimeCategory( tr( "Python" ), QColor( 0x00, 0x8d, 0xff ) );
+    CHECK_NEW(pythn );
+    add( pythn );
 
-    obj->addPatterns( QStringList()
-		      << "moc_*.cpp" << "ui_*.cpp" << "qrc_*.cpp"
-		      , Qt::CaseSensitive );
+    pythn->addSuffixes( QStringList()
+               << "py"
+               );
 
+    MimeCategory * rby = new MimeCategory( tr( "Ruby" ), QColor( 0xff, 0xfb, 0x58 ) );
+    CHECK_NEW(rby );
+    add( rby );
 
-    MimeCategory * libs = new MimeCategory( tr( "Libraries" ), QColor( 0xff, 0xa0, 0x00 ) );
-    CHECK_NEW( libs );
-    add( libs );
+    rby->addSuffixes( QStringList()
+               << "rb"
+               );
 
-    libs->addPattern( "lib*.so.*", Qt::CaseSensitive );
-    libs->addPattern( "lib*.so",   Qt::CaseSensitive );
-    libs->addPattern( "lib*.a",    Qt::CaseSensitive );
-    libs->addSuffix ( "dll" );
+    MimeCategory * sql = new MimeCategory( tr( "SQL" ), QColor( 0x88, 0x75, 0x43 ) );
+    CHECK_NEW(sql );
+    add( sql );
+
+    sql->addSuffixes( QStringList()
+               << "sql"
+               );
+
+    MimeCategory * vb = new MimeCategory( tr( "VB" ), QColor( 0x41, 0x22, 0x00 ) );
+    CHECK_NEW(vb );
+    add( vb );
+
+    vb->addSuffixes( QStringList()
+               << "vb"
+               << "frm"
+               << "mod"
+               << "cls"
+               << "bas"
+               );
+
+    MimeCategory * vhdl = new MimeCategory( tr( "VHDL" ), QColor( 0x26, 0x00, 0x00 ) );
+    CHECK_NEW(vhdl );
+    add( vhdl );
+
+    vhdl->addSuffixes( QStringList()
+               << "vhd"
+               << "vhdl"
+               );
 
 }

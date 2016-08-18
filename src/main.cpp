@@ -16,7 +16,7 @@
 #include "Logger.h"
 
 using std::cerr;
-static const char * progName = "QZedStat";
+static const char * progName = "qCodeMetrics";
 static bool fatal = false;
 
 
@@ -41,8 +41,8 @@ int main( int argc, char *argv[] )
     Logger logger( QString( "/tmp/QZedStat-%1.log" ).arg( getuid() ) );
 
     // Set org/app name for QSettings
-    QCoreApplication::setOrganizationName( "QZedStat" );
-    QCoreApplication::setApplicationName ( "QZedStat" );
+    QCoreApplication::setOrganizationName( "SciTools.com" );
+    QCoreApplication::setApplicationName ( "qCodeMetrics" );
 
     QApplication app( argc, argv);
     QStringList argList = QCoreApplication::arguments();

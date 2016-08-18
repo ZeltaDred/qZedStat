@@ -12,10 +12,10 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>QZedStat</string>
+   <string>qCodeMetrics</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="icons.qrc">
+   <iconset>
     <normaloff>:/icons/QZedStat.png</normaloff>:/icons/QZedStat.png</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
@@ -37,7 +37,7 @@
      <x>0</x>
      <y>0</y>
      <width>1157</width>
-     <height>22</height>
+     <height>19</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -472,11 +472,11 @@
   </action>
   <action name="actionAbout">
    <property name="icon">
-    <iconset resource="icons.qrc">
+    <iconset>
      <normaloff>:/icons/QZedStat.png</normaloff>:/icons/QZedStat.png</iconset>
    </property>
    <property name="text">
-    <string>&amp;About QZedStat...</string>
+    <string>&amp;About qCodeMetrics...</string>
    </property>
    <property name="toolTip">
     <string>Show version, copyright and license information about this program.</string>
@@ -521,7 +521,7 @@
      <normaloff>:/icons/preferences.png</normaloff>:/icons/preferences.png</iconset>
    </property>
    <property name="text">
-    <string>&amp;Configure QZedStat</string>
+    <string>&amp;Configure qCodeMetrics</string>
    </property>
    <property name="toolTip">
     <string>Configure QZedStat</string>

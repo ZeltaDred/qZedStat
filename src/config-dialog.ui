@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>QZedStat Configuration</string>
+   <string>qCodeMetrics Configuration</string>
   </property>
   <property name="sizeGripEnabled">
    <bool>true</bool>
@@ -67,9 +67,7 @@
    </item>
   </layout>
  </widget>
- <resources>
-  <include location="icons.qrc"/>
- </resources>
+ <resources/>
  <connections>
   <connection>
    <sender>okButton</sender>

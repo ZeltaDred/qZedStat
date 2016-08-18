@@ -522,7 +522,7 @@ void MainWindow::readCache( const QString & cacheFileName )
 void MainWindow::askReadCache()
 {
     QString fileName = QFileDialog::getOpenFileName( this, // parent
-						     tr( "Select QZedStat cache file" ),
+                             tr( "Select qCM project file" ),
 						     DEFAULT_CACHE_NAME );
     if ( ! fileName.isEmpty() )
 	readCache( fileName );
@@ -532,14 +532,14 @@ void MainWindow::askReadCache()
 void MainWindow::askWriteCache()
 {
     QString fileName = QFileDialog::getSaveFileName( this, // parent
-						     tr( "Enter name for QZedStat cache file"),
+                             tr( "Enter name for qCM project file"),
 						     DEFAULT_CACHE_NAME );
     if ( ! fileName.isEmpty() )
     {
 	bool ok = _dirTreeModel->tree()->writeCache( fileName );
 
 	QString msg = ok ? tr( "Directory tree written to file %1" ).arg( fileName ) :
-			   tr( "ERROR writing cache file %1").arg( fileName );
+               tr( "ERROR writing project file %1").arg( fileName );
 	_ui->statusBar->showMessage( msg, _statusBarTimeout );
     }
 }
@@ -744,32 +744,32 @@ void MainWindow::toggleVerboseSelection()
 
 void MainWindow::showAboutDialog()
 {
-    QString homePage = "https://github.com/shundhammer/QZedStat";
-    QString mailTo   = "QZedStat@gmx.de";
+    QString homePage = "https://github.com/zeltadred/QZedStat";
+    QString mailTo   = "dz@opensimian.com";
+    QString realThing = "https://scitools.com";
 
-    QString text = "<h2>QZedStat " QZedStat_VERSION "</h2>";
+    QString text = "<h2>qCodeMetrics " QZedStat_VERSION "</h2>";
     text += "<p>";
-    text += tr( "Qt-based directory statistics -- showing where all your disk space has gone "
-		" and trying to help you to clean it up." );
+    text += tr( "Qt-based source code metrics utility -- SLOC and a little more" );
     text += "</p><p>";
-    text += "(c) 2015-2016 Stefan Hundhammer";
+    text += "(c) 2016 Douglas Osborn";
     text += "</p><p>";
     text += tr( "Contact: " ) + QString( "<a href=\"mailto:%1\">%2</a>" ).arg( mailTo ).arg( mailTo );
     text += "</p><p>";
     text += QString( "<p><a href=\"%1\">%2</a></p>" ).arg( homePage ).arg( homePage );
-    text += tr( "License: GPL V2 (GNU Public License Version 2)" );
+    text += tr( "License: GPL V3 (GNU Public License Version 3)" );
     text += "</p><p>";
-    text += tr( "This is free Open Source software, provided to you hoping that it might be "
-		"useful for you. It does not cost you anything, but on the other hand there "
-		"is no warranty or promise of anything." );
-    text += "</p><p>";
-    text += tr( "This software was made with the best intentions and greatest care, but still "
-		"there is the off chance that something might go wrong which might damage "
-		"data on your computer. Under no circumstances will the authors of this program "
-		"be held responsible for anything like that. Use this program at your own risk." );
+    text += tr( "This software was designed to read and analyze files on your computer. Excluding"
+                "the results of the analysis stored in the project file you designate, no files will be intentionally changed."
+                "The exists a remote possibility that something may happen to your data during the execution of this program."
+                "Under no circumstances will the authors of this program "
+                "be held responsible for anything like that. "
+                "Use this program at your own risk." );
     text += "</p>";
+    text += "</p><p>";
+    text += tr( "For a professional metrics tool,  visit " ) + QString( "<a href=\"realThing:%1\">%2</a>" ).arg( realThing ).arg( realThing );
 
-    QMessageBox::about( this, tr( "About QZedStat" ), text );
+    QMessageBox::about( this, tr( "About qCodeMetrics" ), text );
 }
 
 

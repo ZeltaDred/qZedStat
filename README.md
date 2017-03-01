@@ -2,7 +2,8 @@
 
 Qt-based directory statistics:
 
-(c) 2016 Douglas Osborn <douglas.osborn@dmail.dixie.edu>
+   QDirstat is  copyright 2015 Stefan Hundhammer <Stefan.Hundhammer@gmx.de> )
+   portions of  qzedStat (c) 2016 Douglas Osborn <douglas.osborn@dmail.dixie.edu>
 
 Target Platforms: Linux, BSD, Unix-like systems
 

@@ -4,6 +4,10 @@ Qt-based directory statistics:
 
    QDirstat is  copyright 2015 Stefan Hundhammer <Stefan.Hundhammer@gmx.de> )
    portions of  qzedStat (c) 2016 Douglas Osborn <douglas.osborn@dmail.dixie.edu>
+   
+   Public  apologies are hereby  given to Stefan,  whose work and dedication to Open source I admire.
+   I did not intend that this work  be represented as solely mine.
+   Public  Thanks  for his willingness to forgive my discretions.
 
 Target Platforms: Linux, BSD, Unix-like systems
 
@@ -11,7 +15,12 @@ License: GPL V2
 
 Updated: 2016-08-11
 
+##   Project  Notice..
 
+ In order to remove any further possibility of  confusion... this  project  has  been  stripped of  the offending  code.
+ This  file is retained  at the request of the copyright  owner  to display the  public  notices  above
+ 
+ 
 ## Overview
 
 QZedStat is a fork of the QDirStat ((c) 2015 Stefan Hundhammer <Stefan.Hundhammer@gmx.de> ) program

@@ -2,12 +2,12 @@
 
 Qt-based directory statistics:
 
-   QDirstat is  copyright 2015 Stefan Hundhammer <Stefan.Hundhammer@gmx.de> )
-   portions of  qzedStat (c) 2016 Douglas Osborn <douglas.osborn@dmail.dixie.edu>
+   QDirstat is copyright 2015 Stefan Hundhammer <Stefan.Hundhammer@gmx.de> )
+   portions of qzedStat (c) 2016 Douglas Osborn <douglas.osborn@dmail.dixie.edu>
    
-   Public  apologies are hereby  given to Stefan,  whose work and dedication to Open source I admire.
-   I did not intend that this work  be represented as solely mine.
-   Public  Thanks  for his willingness to forgive my discretions.
+   Public apologies are hereby given to Stefan, whose work and dedication to Open source I admire.
+   I did not intend that this work be represented as solely mine.
+   Public Thanks for his willingness to forgive my discretions.
 
 Target Platforms: Linux, BSD, Unix-like systems
 
@@ -15,31 +15,31 @@ License: GPL V2
 
 Updated: 2016-08-11
 
-##   Project  Notice..
+## Project Notice..
 
- In order to remove any further possibility of  confusion... this  project  has  been  stripped of  the offending  code.
- This  file is retained  at the request of the copyright  owner  to display the  public  notices  above
+ In order to remove any further possibility of confusion... this project has been stripped of the offending code.
+ This file is retained at the request of the copyright owner to display the public notices above
  
  
 ## Overview
 
 QZedStat is a fork of the QDirStat ((c) 2015 Stefan Hundhammer <Stefan.Hundhammer@gmx.de> ) program
-with a slightly different focus.   It leverages many of the existing features of qDirStat (Directory scanning,
-file type identification by filename suffix, graphical representaion of  file tree structure) to drive source 
-code  analysis tools.
+with a slightly different focus. It leverages many of the existing features of qDirStat (Directory scanning,
+file type identification by filename suffix, graphical representaion of file tree structure) to drive source 
+code analysis tools.
 
-The cleanup features of qDirStat have been removed.  Since full file tree access on *nix systems generally
-requires elevated permissions, it was deemed  safer to disable these features  than to attempt to add safety checks
-to all the possible cleanup actions that can be configured in the original  program.
+The cleanup features of qDirStat have been removed. Since full file tree access on *nix systems generally
+requires elevated permissions, it was deemed safer to disable these features than to attempt to add safety checks
+to all the possible cleanup actions that can be configured in the original program.
 
 The Mime configuration categories have been 'hijacked' to segregate and identify source code files related to particular
-programming languages.  The  file suffix defaults that are hard coded are the result of an attempt to maintain
-some compatability  with some of the other  open-source code analysis utilities available.
+programming languages. The file suffix defaults that are hard coded are the result of an attempt to maintain
+some compatability with some of the other open-source code analysis utilities available.
 
 
-##  Under Construction   .....
+## Under Construction .....
 
-The remainder of this page is currently under construction...   references  to the old program  will be replaced  
+The remainder of this page is currently under construction... references to the old program will be replaced 
 as new ones come available.
 
 
@@ -82,6 +82,3 @@ _Context menu of the tree header where you can configure the columns._
 
     Cache files containing the root file system would not display correctly or
     segfault under certain conditions. This is now fixed.
-
-  
-  
